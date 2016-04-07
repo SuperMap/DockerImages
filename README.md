@@ -1,33 +1,33 @@
-SuperMap GIS ÏµÁĞ²úÆ·µÄDocker¾µÏñ¹¹½¨½Å±¾
+SuperMap GIS ç³»åˆ—äº§å“çš„Dockeré•œåƒæ„å»ºè„šæœ¬
 
-¼ò½é
+ç®€ä»‹
 =======
-## iExpress¾µÏñ
+## iExpressé•œåƒ
 
-### ¹¹½¨¹ı³Ì
+### æ„å»ºè¿‡ç¨‹
 
-1, ½«iExpressÎÄ¼ş¼Ğ·Åµ½LinuxÏµÍ³£¬ÀıÈç~/iExpressÎ»ÖÃ
+1, å°†iExpressæ–‡ä»¶å¤¹æ”¾åˆ°Linuxç³»ç»Ÿï¼Œä¾‹å¦‚~/iExpressä½ç½®
 
-2, ½«iExpressµÄ°üÒ²·ÅÔÚ~/iExpressÎ»ÖÃ£¬ĞŞ¸ÄDockerfileÎÄ¼şÖĞµÄiExpress°üÃû£¬Ê¹Ò»ÖÂ
+2, å°†iExpressçš„åŒ…ä¹Ÿæ”¾åœ¨~/iExpressä½ç½®ï¼Œä¿®æ”¹Dockerfileæ–‡ä»¶ä¸­çš„iExpressåŒ…åï¼Œä½¿ä¸€è‡´
 
-3, ÔËĞĞÈçÏÂÃüÁî
+3, è¿è¡Œå¦‚ä¸‹å‘½ä»¤
 
 ```bash
 $ sudo docker --tag supermap/iexpress build ~/iExpress
 ```
 
-### ÈçºÎÔËĞĞiExpress£¿
+### å¦‚ä½•è¿è¡ŒiExpressï¼Ÿ
 
-ÔËĞĞÈçÏÂÃüÁî£º
+è¿è¡Œå¦‚ä¸‹å‘½ä»¤ï¼š
 
 ```bash
 $ sudo docker run --name iexpress1 -d -p 8090:8090 supermap/iexpress
 ```
 
-ÆäÖĞ£º
+å…¶ä¸­ï¼š
 
-* --name £º±íÊ¾Æô¶¯µÄContainerÃû³Æ£¬ÕâÀïÎªiexpress1
-* -d£º±íÊ¾Æô¶¯ºó£¬ÔÚºóÌ¨ÔËĞĞ
-* -p 8080:8090£º½«Æô¶¯µÄContainerÖĞ¶Ë¿Ú8090Ó³Éäµ½ÁËËŞÖ÷»úµÄ8090¶Ë¿Ú
+* --name ï¼šè¡¨ç¤ºå¯åŠ¨çš„ Container åç§°ï¼Œè¿™é‡Œä¸ºiexpress1
+* -dï¼šè¡¨ç¤ºå¯åŠ¨åï¼Œåœ¨åå°è¿è¡Œ
+* -p 8080:8090ï¼šå°†å¯åŠ¨çš„Containerä¸­ç«¯å£8090æ˜ å°„åˆ°äº†å®¿ä¸»æœºçš„8090ç«¯å£
 	
-Èç´Ë£¬·ÃÎÊ http://<ËŞÖ÷»úIP>:8090£¬³õÊ¼»¯ºó£¬¼´¿É¿´µ½iExpressÊ×Ò³
+å¦‚æ­¤ï¼Œè®¿é—® http://<å®¿ä¸»æœºIP>:8090ï¼Œåˆå§‹åŒ–åï¼Œå³å¯çœ‹åˆ°iExpressé¦–é¡µ
